@@ -1,0 +1,16 @@
+SELFTEST 15/15
+PASS C01 — trích đúng §3.3, phản ví dụ tách nhãn khỏi nguồn khóa học, bản nháp sửa được
+PASS C02 — bỏ bản nháp → không có yêu cầu trong hàng chờ
+PASS C03 — hàng chờ có đúng nội dung đã duyệt, “chưa đọc”, không hứa trước hạn
+PASS C04 — lỗi giữ nháp, không báo đã gửi; thử lại thành công không tạo trùng
+PASS C05 — bấm gửi lặp + đổi tab không tạo trùng; mất phản hồi → “chưa xác định”, kiểm tra lại không gửi trùng
+PASS C06 — sửa sau xem trước → phải xem/duyệt lại, xác nhận cũ không gửi được bản mới
+PASS C07 — không có đáp số/nhận xét hộ trong tin, nguồn, nút; S03 từ chối cả “đúng hay sai”
+PASS C08 — chỉ một gợi ý bước đầu; các lượt sau bị chặn; vẫn xem được khái niệm bằng ví dụ khác
+PASS C09 — bài 2 (đã đóng) giải đầy đủ; đổi sang bài 3 → đánh giá lại, chỉ gợi ý bước đầu
+PASS C10 — học viên không có nút đăng; TA đăng bị chặn khi chứa đáp số bài mở hoặc chưa tích kiểm tra; chỉ đăng sau TA duyệt
+PASS C11 — N01 trả lời ngay kèm nguồn, không chuyển TA; S05 hỏi lại một câu
+PASS C12 — không bịa “slide 12”; ca lạ ngoài tài liệu → nói không có, đề nghị hỏi TA
+PASS X1 — correction: câu sai cũ được giữ lại có nhãn đính chính, không âm thầm xoá
+PASS X2 — S10 không hứa trước hạn, không gia hạn, không tự gửi TA
+PASS X3 — S06 nói buổi 7, không giảng chi tiết

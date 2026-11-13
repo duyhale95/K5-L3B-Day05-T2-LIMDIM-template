@@ -1,13 +1,13 @@
-# Bài nộp LAB5 — T2 Giáo dục · Nhóm [chưa điền]
+# Bài nộp LAB5 — T2 Giáo dục · Nhóm LIMDIM
 
-> **Bản hoàn thiện nội dung §1–§4 để kiểm tra.** Đây là đặc tả thiết kế, chưa phải prototype đã chạy. Các câu người dùng, phản hồi AI và trạng thái giao diện bên dưới đều là tình huống dựng để học. §5–§7 do thành viên B bổ sung sau khi triển khai và demo.
+> Các câu người dùng, phản hồi AI và trạng thái giao diện trong bài đều là tình huống dựng để học. Prototype nằm ở [`prototype/`](prototype/): mở `prototype/index.html` bằng trình duyệt. §7 ghi kết quả demo sau buổi demo.
 
-**Lớp:** [chưa điền] · **Bàn/zone:** [chưa điền] · **Track:** T2
+**Lớp:** L3B · **Bàn/zone:** [chưa điền] · **Track:** T2
 
-| Họ và tên | Mã học viên | Phần phụ trách |
+| Họ và tên | Mã học viên | Việc đã làm |
 |---|---|---|
-| Hà Lê Duy (A) | 2A202603851 | §1 phạm vi, §2 kịch bản, §3 UX khi sai, §4 mức tự chủ; đối chiếu prototype với đặc tả |
-| Nguyễn Thiên Bảo (B) | 2A202603861 | §5 prototype và ảnh chú thích, §6 tiêu chí đạt, §7 demo; dựng hai màn hình và kiểm tra tương tác |
+| Hà Lê Duy (A) | 2A202603851 | §1 phạm vi, §2 kịch bản, §3 UX khi sai, §4 mức tự chủ; viết bàn giao và checklist C01–C12; đối chiếu prototype với đặc tả |
+| Nguyễn Thiên Bảo (B) | 2A202603861 | Dựng prototype 2 màn hình (học viên, hàng chờ TA): định tuyến kịch bản, luồng bản nháp → xem trước → duyệt → gửi, chặn FAQ; bộ tự kiểm C01–C12; chụp ảnh đánh số; viết §5–§7 |
 
 **Thông tin liên hệ thành viên:**
 
@@ -16,7 +16,7 @@
 | Hà Lê Duy | [26ai.duyhl2@vinuni.edu.vn](mailto:26ai.duyhl2@vinuni.edu.vn) | [duyhale95](https://github.com/duyhale95) |
 | Nguyễn Thiên Bảo | [26ai.baont5@vinuni.edu.vn](mailto:26ai.baont5@vinuni.edu.vn) | [Limdim1604](https://github.com/Limdim1604) |
 
-Đề yêu cầu đúng 3 thành viên; nhóm hiện có 2. **Tình trạng xin ngoại lệ với TA: chưa xác nhận.** Bảng trên là phân công, không phải xác nhận mọi việc đã hoàn thành. Thảo luận cá nhân và kết quả demo chưa diễn ra sẽ không được ghi như sự kiện thật.
+Nhóm có 2 thành viên. Buổi lab L3B ngày 13/11/2026, ban tổ chức cho phép nhóm 2–4 người. Kết quả demo chưa diễn ra sẽ không được ghi như sự kiện thật.
 
 ## §1. Lát cắt & phạm vi
 
@@ -125,7 +125,7 @@ Phản ví dụ là phép kiểm tra toán học minh bạch của thiết kế,
 
 > Bài 3 đang mở, hạn nộp là 23:59 ngày 13/11/2026 theo trang khóa học. Mình có thể gợi ý bước đầu, nhưng không đưa hoặc xác nhận đáp số, cũng không viết nhận xét để bạn nộp.
 >
-> Bạn có thể bắt đầu bằng cách sắp xếp dãy số ở §3.5 theo thứ tự tăng dần. Sau đó đối chiếu quy tắc xác định trung vị với §3.2. Mình sẽ không tính hoặc chốt kết quả của bài đang mở.
+> Bạn có thể bắt đầu bằng cách đếm xem dãy ở §3.5 có bao nhiêu giá trị, rồi đối chiếu quy tắc chẵn/lẻ khi tìm trung vị ở §3.2. Mình sẽ không tính hoặc chốt kết quả của bài đang mở.
 >
 > Nếu bạn đang vướng một khái niệm, hãy nói rõ khái niệm đó; mình có thể giải thích từ tài liệu. Nếu cần TA, bạn có thể xem và duyệt nội dung gửi. TA hiện ngoài giờ, nên mình không hứa có phản hồi trước hạn tối nay.
 
@@ -162,7 +162,7 @@ Phản ví dụ là phép kiểm tra toán học minh bạch của thiết kế,
 | HAX G9 — Sửa dễ dàng | Người học sửa câu hỏi/báo cáo, bỏ bản nháp trước gửi; AI không tự công bố bản sửa. | H2: nút sửa, trường nội dung và nút bỏ; sau sửa vẫn phải duyệt gửi. |
 | HAX G10 — Thu hẹp phạm vi khi nghi ngờ | Không đoán nguồn không có, không chốt lời giải; chuyển câu cần thẩm quyền sau bước duyệt. | H3: giới hạn hỗ trợ, bản xem trước gửi TA và cảnh báo ngoài giờ. |
 
-Đây là vị trí **dự kiến**; §5 phải thay bằng ảnh thật có đánh số sau khi prototype được dựng. Không ghi đã thể hiện nguyên tắc trên màn hình khi chưa kiểm tra.
+Các vị trí H1–H3 đã được dựng trên prototype. Ảnh đánh số và bảng giải thích từng số nằm ở §5.2.
 
 ### 3.4. Bốn đường trải nghiệm cần bàn giao
 
@@ -200,7 +200,7 @@ Nhãn “mô phỏng” phải hiện trên cả hai màn hình: mã yêu cầu 
 
 ### 4.1. Ma trận bốn tool
 
-Quyền dưới đây là **đề xuất thiết kế của bản nháp**, chưa phải cơ chế đã được cài đặt. “Tự làm” có điều kiện, không cho phép vượt phạm vi §1. Những hành vi bị cấm được ghi riêng dù tool có mức chính là tự làm hoặc cần duyệt.
+Quyền dưới đây đã được cài đặt trong prototype mô phỏng (xem §5.3). “Tự làm” có điều kiện, không cho phép vượt phạm vi §1. Những hành vi bị cấm được ghi riêng dù tool có mức chính là tự làm hoặc cần duyệt.
 
 | Tool | Mức chính và điều kiện | Sai thì ai chịu, có đảo được không? | Chờ người thì mất gì? | Phương án đã loại |
 |---|---|---|---|---|
@@ -226,7 +226,7 @@ Ba cách cân nhắc:
 2. **Mọi gợi ý cần TA duyệt:** kiểm soát chặt hơn nhưng thất bại với nhu cầu học tối muộn; N01 cũng có thể bị chờ vô ích.
 3. **Tự gợi ý có ranh giới nội dung:** phương án cả hai thành viên đã chọn. Bước đầu hỗ trợ được ngay; yêu cầu giải/chấm bài bị chặn, câu khái niệm có nguồn vẫn được đáp.
 
-Đổi lại, cách 3 cần kiểm soát nhiều lượt: không để mỗi lượt “chỉ thêm một bước” cuối cùng thành cả bài. Với prototype mô phỏng, B cần dựng yêu cầu lặp và đường chặn rõ; không tuyên bố đã giải quyết mọi cách lách bằng ngôn ngữ tự nhiên.
+Đổi lại, cách 3 cần kiểm soát nhiều lượt: không để mỗi lượt “chỉ thêm một bước” cuối cùng thành cả bài. Prototype mô phỏng dựng đường chặn yêu cầu lặp: mỗi bài mở chỉ có một gợi ý bước đầu, các lượt xin thêm đều bị chặn (C08 ở §5.4). Bài không tuyên bố đã giải quyết mọi cách lách bằng ngôn ngữ tự nhiên.
 
 **Lựa chọn của từng thành viên:** Hà Lê Duy (A) và Nguyễn Thiên Bảo (B) đều chọn phương án 3: AI được tự gợi ý trong giới hạn, không đưa hoặc xác nhận đáp số bài đang mở. Bảo đã xác nhận lựa chọn này. Hai thành viên không có bất đồng về mức tự chủ của tool; khác biệt giữa các phương án vẫn được phân tích để làm rõ cái giá của từng cách, không dựng ra một cuộc tranh luận không có thật.
 
@@ -234,11 +234,11 @@ Ba cách cân nhắc:
 
 **Cách chốt và chuyển thành yêu cầu triển khai:** Dùng phương án 3 làm cơ sở bàn giao. Giữ hỗ trợ ngay cho N01 và phần khái niệm có nguồn; với bài mở, chỉ đưa bước đầu, không tăng dần tới kết quả qua các lượt. Nội dung cần thẩm quyền được soạn thành bản nháp để học viên duyệt chuyển TA; FAQ vẫn cần TA duyệt. Nếu prototype chưa kiểm soát được yêu cầu lặp, thu hẹp về giải thích khái niệm thay vì tiếp tục sinh các bước giải. Cách này cân bằng cái giá lộ đáp án ở S02/S03 với cái giá chờ vô ích ở S10.
 
-**Điểm B cần chứng minh trên prototype:** Không chỉ giấu nút xem đáp án mà còn chặn xin xác nhận kết quả và yêu cầu giải từng bước liên tiếp. Sự đồng thuận về phương án thiết kế không thay thế cho kiểm tra hành vi thực tế; kết quả kiểm tra sẽ được ghi ở §5–§6 sau khi triển khai.
+**Đã chứng minh trên prototype:** không chỉ giấu nút xem đáp án, mà còn chặn xin xác nhận kết quả (C07) và chặn xin giải từng bước liên tiếp (C08). Kết quả ở §5.4 và §6.
 
 ### 4.4. Thử mức tự chủ trên ba ca — duyệt thiết kế trên giấy
 
-Bảng này là kiểm tra logic dự kiến; chưa phải kết quả chạy prototype.
+Bảng này là kiểm tra logic trên giấy. Kết quả chạy thật trên prototype nằm ở §5.4: các ca tương ứng C01–C11 đều đạt.
 
 | Ca | Chuỗi hành động dự kiến | Sai đã bị chặn thế nào? | Còn tự làm khi cần hỏi/duyệt không? | Có bắt chờ vô ích không? |
 |---|---|---|---|---|
@@ -246,7 +246,7 @@ Bảng này là kiểm tra logic dự kiến; chưa phải kết quả chạy pr
 | S02 — bài mở | Đọc B và §3.5 → nêu giới hạn → gợi ý bước đầu → chặn xin đáp số/xác nhận lặp lại → chuyển TA chỉ khi học viên muốn và duyệt. | Chặn lời giải trước hiển thị và trên FAQ; không xem xác thực người học là quyền giải hộ. | Không gửi TA ngầm, không dùng học viên duyệt để mở khóa đáp án. | Không cần TA duyệt định nghĩa/gợi ý bước đầu có nguồn. |
 | N01 — hỏi khái niệm | Tự tra §3.1–§3.2 → giải thích trung bình/trung vị, kèm nguồn. | Không kéo câu hỏi thành lời giải số liệu §3.5; không thêm nguồn ngoài fixture. | Không cần hỏi lại vì yêu cầu đã rõ; không có hành động công khai cần duyệt. | Trả lời ngay, không chuyển TA bắt buộc. |
 
-**Điểm cần B kiểm chứng:** yêu cầu lặp lại không rò đáp án; tin nhắn không vượt quyền dù nút đã bị ẩn; gửi lỗi không báo thành công; đổi màn hình không làm ticket trùng/mất; FAQ không tự xuất bản. Nếu prototype chưa chặn được thì phải ghi lỗi còn lại ở §6 và sửa, không coi bảng này là bằng chứng chạy đạt.
+**Đã kiểm trên prototype (§5.4):** yêu cầu lặp không rò đáp án (C08); tin nhắn không vượt quyền dù nút đã bị ẩn (C07, C10); gửi lỗi không báo thành công (C04); đổi màn hình không làm ticket trùng hoặc mất (C05); FAQ không tự xuất bản (C10). Lỗi còn lại ghi ở §6.
 
 ### 4.5. Luật bổ sung và tách bước
 
@@ -271,8 +271,140 @@ Mức tự chủ chuyển lời hứa từ “AI giải quyết mọi câu hỏi
 5. **Không tự sửa lịch sử đã gửi.** Bỏ bản nháp chỉ hủy trước khi gửi. Bổ sung sau gửi tạo bản nháp mới liên kết yêu cầu gốc; học viên xem và duyệt riêng. Không tuyên bố có tool thu hồi hay sửa ticket từ xa mà đề chưa cấp.
 6. **“Tự làm có thể sửa” không đồng nghĩa mọi hậu quả đều hoàn tác được.** Đọc nguồn không thay dữ liệu; gợi ý đã đọc không thu hồi khỏi người học được. Có thể dừng gợi ý, sửa nhu cầu, đánh dấu đính chính; không đặt nút hoàn tác giả cho kiến thức đã lộ.
 
-Các bước xử lý trạng thái ở đây là luật thiết kế bổ sung cho prototype, không phải dữ liệu hay tool mới do đề cung cấp. Trường hợp kết quả gửi chưa rõ cần hiện “Chưa xác định được kết quả gửi”, tránh báo sai trạng thái; nếu B chưa dựng được thì ghi giới hạn trong §5–§6.
+Các bước xử lý trạng thái ở đây là luật thiết kế bổ sung cho prototype, không phải dữ liệu hay tool mới do đề cung cấp. Trường hợp kết quả gửi chưa rõ cần hiện “Chưa xác định được kết quả gửi”, tránh báo sai trạng thái; prototype đã dựng trạng thái này (C05 ở §5.4).
 
----
+## §5. Prototype
 
-**Bàn giao cho B — chưa thuộc phần đã triển khai:** dùng S01/S02 và N01; dựng đủ bốn đường ở §3.4; giữ mã H1–H3 khi đánh số ảnh; đối chiếu mọi nút với §4. B bổ sung §5–§7 vào bản cuối, kèm ảnh thật, kết quả thử thực tế và ca lạ nhận được trong demo. Không sao chép nhãn “đã chạy đạt” từ bảng dự kiến.
+### 5.1. Mở ở đâu, làm bằng gì
+
+| Thứ | Giá trị |
+|---|---|
+| File | [`prototype/index.html`](prototype/index.html), mở bằng trình duyệt, không cần mạng. Hướng dẫn bấm: [`prototype/README.md`](prototype/README.md) |
+| Công cụ | HTML/CSS/JS thuần, một file, không backend |
+| Hai màn hình | **Màn 1 · Học viên** (chat, thẻ nguồn, bản nháp gửi TA) · **Màn 2 · Hàng chờ TA (mô phỏng)** (nhận yêu cầu, dự thảo FAQ, duyệt đăng) |
+| Phần mock | Câu trả lời AI do bộ luật từ khoá chọn ra, câu chữ lấy nguyên văn từ §3. Hàng chờ TA, mã `YC-…`, FAQ đều chỉ tồn tại trong trang. Lỗi mạng và mất phản hồi được bật bằng tay trong "Bảng điều khiển demo". Đồng hồ cố định 22:30 13/11/2026 |
+| Lời gọi AI thật | **Không có.** Nhóm không nhận bonus +3 |
+| Dữ liệu | Chỉ dữ liệu dựng của track: tài liệu buổi 3 §3.1–§3.5, trang khóa học |
+
+### 5.2. Ảnh đánh số
+
+**Ảnh 1 — S01: học viên hỏi về câu sai §3.3, AI cảnh báo và soạn báo cáo** ([`anh-s01.png`](prototype/anh-s01.png))
+
+![S01](prototype/anh-s01.png)
+
+**Ảnh 2 — S02 rồi S03: xin giải bài 3, xin xác nhận đáp số, xem trước câu hỏi gửi TA** ([`anh-s02.png`](prototype/anh-s02.png))
+
+![S02](prototype/anh-s02.png)
+
+**Ảnh 3 — Màn TA: hai yêu cầu đã duyệt gửi, dự thảo FAQ bị chặn** ([`anh-ta.png`](prototype/anh-ta.png))
+
+![TA](prototype/anh-ta.png)
+
+| Số | Thể hiện gì | Nguyên tắc | Mức tự chủ |
+|---|---|---|---|
+| **H0** | Nhãn "Bạn đang trò chuyện với trợ lý AI" và khung "Trợ lý AI này làm được gì" ở đầu chat (lời hứa §4.6) | G1 · Luật AI 134/2025 Điều 11 khoản 1 | — |
+| **H1** | Thẻ nguồn §3.x dưới mỗi câu trả lời. Bấm vào thì khung "Căn cứ trợ lý dựa vào" hiện nguyên văn đoạn tài liệu, câu nghi sai được tô vàng. Phản ví dụ 0,25 → 0,5 nằm trong khung riêng có nhãn "do nhóm dựng, không phải trích tài liệu" | PAIR Explainability + Trust | `tra_cuu_tai_lieu` · tự làm |
+| **H4** | Nhãn căn cứ trên đầu mỗi câu trả lời: *Có nguồn* (xanh) · *Nguồn có điểm cần kiểm tra* (vàng) · *Giới hạn: bài đang mở* (tím) · *Không có trong tài liệu* (xám) · *Cần hỏi lại*. Bên cạnh là tên tool và mức đang dùng, ví dụ `goi_y_bai_tap · tự làm, chỉ bước đầu` | G2 · Làm rõ làm tốt đến đâu | hiện mức của tool vừa dùng |
+| **H2** | Bản nháp gửi TA: ô chữ sửa được, nút **Xem trước** và **Bỏ bản nháp**. Dưới mỗi câu trả lời có thêm "Không phải ý mình — hỏi lại" và "Câu này sai? Báo TA" | G9 · Sửa dễ dàng (G8 · bỏ dễ dàng) | `chuyen_TA` · cần học viên duyệt |
+| **H3** | Bước xem trước: người nhận, nguồn đính kèm, dòng "TA ngoài giờ, không cam kết trước 23:59", dòng "Bài 3 đang mở: TA không giải hộ", nút **Xác nhận gửi TA** | G10 · Thu hẹp phạm vi khi nghi ngờ | `chuyen_TA` · cần học viên duyệt |
+| **H3b** | Ghi chú "Không có nút Kiểm tra đáp số / Xem đáp án / Gia hạn / Đăng FAQ": việc cấm thì không có nút, và yêu cầu gõ bằng tin nhắn cũng bị chặn | G10 · PAIR Errors + Graceful Failure | việc **cấm** |
+| **H5** | Dự thảo FAQ ở màn TA: AI chỉ soạn. Nút **Duyệt đăng FAQ** bị chặn khi TA chưa tích "đã kiểm tra", khi yêu cầu gốc chưa được xem, khi thiếu mục §, hoặc khi nội dung có đáp số bài đang mở | PAIR Errors + Graceful Failure | `dang_FAQ` · cần TA duyệt |
+
+Ba nguyên tắc chính ở §3.3 (PAIR, G9, G10) ứng với H1, H2, H3. G1, G2 (H0, H4) là phần bổ sung.
+
+### 5.3. Mỗi mức tự chủ trông thế nào trên màn hình
+
+| Tool hoặc việc | Mức ở §4 | Trên prototype |
+|---|---|---|
+| `tra_cuu_tai_lieu` | tự làm | Trả lời ngay kèm thẻ nguồn (N01 không phải chờ ai). Đường sửa là "Không phải ý mình — hỏi lại" và "Câu này sai? Báo TA" |
+| `goi_y_bai_tap` | tự làm có giới hạn | Bài 2 (đã đóng): giải đầy đủ, có đáp án 6. Bài 3 (đang mở): đúng **một** gợi ý bước đầu; xin thêm bước hoặc xin xác nhận thì bị chặn, kèm ví dụ ngoài bài để học khái niệm |
+| `chuyen_TA` | cần học viên duyệt | Bản nháp → Xem trước → Xác nhận gửi → Đang gửi → Đã vào hàng chờ / Chưa gửi được / Chưa xác định. Không có gì tự gửi |
+| `dang_FAQ` | cần TA duyệt | Học viên không có nút đăng. Ở màn TA, AI chỉ soạn dự thảo; TA phải tích ô kiểm tra và qua bộ chặn nội dung |
+| Sửa tài liệu, gia hạn, đưa hoặc xác nhận đáp số bài mở, tự đăng FAQ | cấm | Không có nút nào. Nếu học viên gõ yêu cầu bằng chữ thì AI từ chối và chỉ đường khác (H3b) |
+
+### 5.4. Kết quả chạy thật C01–C12
+
+Mở `prototype/index.html?selftest=1`: trang tự bấm qua giao diện theo checklist trong bàn giao. Kết quả lần chạy bằng Chrome headless ngày 13/11/2026 được lưu ở [`prototype/selftest-result.txt`](prototype/selftest-result.txt): **15/15 PASS**.
+
+| Mã | Kết quả | Mã | Kết quả |
+|---|---|---|---|
+| C01 nguồn §3.3 + sửa nháp | PASS | C08 xin thêm bước liên tiếp | PASS |
+| C02 bỏ nháp → không có yêu cầu | PASS | C09 bài 2 → bài 3 đánh giá lại | PASS |
+| C03 gửi thành công, "TA chưa đọc" | PASS | C10 đòi đăng FAQ, chặn đáp số | PASS |
+| C04 lỗi mạng → thử lại, không trùng | PASS | C11 N01 trả lời ngay, S05 hỏi lại | PASS |
+| C05 bấm gửi lặp, đổi tab, mất phản hồi | PASS | C12 "slide 12" và ca lạ ngoài tài liệu | PASS |
+| C06 sửa sau xem trước phải duyệt lại | PASS | X1 correction giữ câu sai có nhãn | PASS |
+| C07 không đáp số, không nút chấm | PASS | X2 S10 không hứa, không gia hạn · X3 S06 buổi 7 | PASS |
+
+Phạm vi của kết quả này: test chứng minh **prototype** làm đúng các ca đã viết luật. Nó không chứng minh một mô hình ngôn ngữ thật sẽ tuân thủ các luật đó (xem §6, lỗi còn lại).
+
+### 5.5. Quyết định cách hiện, và các cách đã loại
+
+**Hiện độ chắc bằng loại căn cứ, không bằng phần trăm.**
+- *Đã cân nhắc:* (a) thanh phần trăm "độ tin cậy 85%"; (b) chỉ ghi "§3.3" ở cuối câu như chú thích; (c) nhãn màu theo loại căn cứ, kèm thẻ nguồn mở được nguyên văn.
+- *Chọn (c).* Ca S01 cho thấy "có nguồn" chưa có nghĩa là "đúng": AI trích đúng §3.3 nhưng câu nguồn sai. Một con số phần trăm sẽ cao đúng ở chỗ nguy hiểm nhất. Nhãn "Nguồn có điểm cần kiểm tra" cùng câu tô vàng cho học viên tự kiểm (PAIR: tin đúng mức).
+- *Loại (a):* không có căn cứ để tính con số. *Loại (b):* học viên phải tự đi tìm tài liệu lúc 22:30, và chú thích không phân biệt được nguồn khóa học với ví dụ nhóm dựng.
+
+**Chuyển TA bằng thẻ bản nháp nằm cạnh chat, không bằng hộp thoại bật lên hay "tự gửi rồi cho hoàn tác".**
+- *Đã cân nhắc:* (a) AI tự gửi, có nút "Hoàn tác trong 10 giây"; (b) hộp thoại "Gửi TA? Có / Không"; (c) thẻ bản nháp có Sửa / Xem trước / Xác nhận.
+- *Chọn (c),* vì học viên phải **thấy và sửa được nội dung** trước khi duyệt (§4.2), và thấy trước dòng "TA ngoài giờ" chứ không phải sau khi gửi (lỗi ngữ cảnh §3.5).
+- *Loại (a):* đề không cấp tool thu hồi yêu cầu, nên nút hoàn tác sẽ là lời hứa giả (§4.7.5). *Loại (b):* hộp Có/Không không cho sửa, dễ bị bấm theo thói quen.
+
+**Việc cấm thì không có nút, không dùng nút mờ.**
+- Nút "Xem đáp án" để mờ vẫn gợi ý rằng việc đó làm được nếu có quyền, và mời học viên tìm cách lách. Thay vào đó, prototype ghi rõ "Không có nút … — việc này bị cấm" (H3b) và chặn cả yêu cầu gõ bằng chữ.
+
+**Việc "tự làm" không có nút hoàn tác.**
+- Rubric gợi ý "tự làm có hoàn tác". Nhưng với `tra_cuu_tai_lieu` và `goi_y_bai_tap`, thứ đã hiện ra là kiến thức học viên đã đọc, không thu hồi được (§4.7.6).
+- Prototype vì vậy đặt **đường sửa** thay cho hoàn tác: "Không phải ý mình — hỏi lại" (sửa câu hỏi, giữ câu trả lời cũ để đối chiếu), "Câu này sai? Báo TA", và đính chính có nhãn khi AI sai (X1). Một nút "hoàn tác" ở đây sẽ là lời hứa giả.
+
+**Màn TA là bonus của track, và cũng là bằng chứng cho câu hỏi "ai được báo".**
+- Yêu cầu chỉ xuất hiện sau khi học viên xác nhận, với đúng nội dung đã duyệt (C03), kèm cờ "Bài 3 đang mở — không đăng lời giải" và "Gửi ngoài giờ TA".
+
+### 5.6. Ca lạ đi đường nào, và giới hạn của prototype
+
+- Ô chat nhận câu gõ tự do. Câu khớp luật đi vào nhánh tương ứng (S01–S10, N01, bài 2, buổi chưa học). Câu không khớp luật nào đi vào nhánh "Tài liệu không có" (C12): AI không trả lời bằng kiến thức ngoài tài liệu, và đề nghị soạn câu hỏi cho TA.
+- **Giới hạn thật:**
+  - Bộ luật từ khoá có thể chọn nhầm nhánh với câu diễn đạt lạ hoặc câu gộp nhiều ý.
+  - Hàng chờ và FAQ mất khi tải lại trang.
+  - Màn TA là góc nhìn mô phỏng, không có xác thực.
+  - "Bổ sung sau gửi" tạo yêu cầu mới có nhãn liên kết tới yêu cầu gốc, chưa gộp chung với yêu cầu gốc.
+
+## §6. Tốt là gì
+
+Ba tiêu chí Pass/Fail, chấm được mà không cần tranh luận:
+
+| # | Tiêu chí | Fail khi |
+|---|---|---|
+| T1 | **Không lộ bài đang mở.** Không có đáp số, xác nhận đúng/sai hay nhận xét hộ cho bài 3, ở bất kỳ chỗ nào: tin nhắn, thẻ nguồn, gợi ý lặp, FAQ | Trên trang xuất hiện kết quả bài 3, hoặc một câu "đúng/sai" cho đáp số học viên đưa |
+| T2 | **Nguồn đúng và tách bạch.** Mọi câu về nội dung kèm mục § mở được nguyên văn; câu nghi sai được gắn cờ; ví dụ nhóm dựng có nhãn riêng; không nhắc nguồn không có | Có câu nội dung không kèm §, hoặc lặp câu sai §3.3 như kết luận chắc chắn mà không đính chính, hoặc có nội dung "slide 12" |
+| T3 | **Trung thực về trạng thái.** Chỉ báo "đã vào hàng chờ" sau khi học viên duyệt và gửi thành công; không hứa giờ TA trả lời; FAQ không đăng khi chưa có TA duyệt | Có thông báo "đã gửi" khi chưa gửi hoặc gửi lỗi; có câu "TA sẽ trả lời trước hạn" hoặc "đã gia hạn"; có FAQ được đăng mà không qua TA |
+
+**Chấm thử trên hai ca đắt nhất (chạy trên prototype):**
+
+| Tiêu chí | S01 — tài liệu sai | S02 — xin giải bài mở |
+|---|---|---|
+| T1 | Không áp dụng: S01 không chạm bài 3. Đã kiểm thêm: dự thảo FAQ từ S01 không chứa kết quả bài 3 | **Pass** (C07, C08, C10: không rò số, không xác nhận, FAQ có đáp số bị chặn) |
+| T2 | **Pass** (C01: thẻ §3.3, câu sai tô vàng, phản ví dụ tách nhãn; X1: nếu AI lặp câu sai thì có đính chính, câu cũ được giữ) | **Pass** (thẻ Trang khóa học · Bài 3, §3.1, §3.2, §3.5; hạn lấy từ trang khóa học) |
+| T3 | **Pass** (C02–C06: bỏ nháp không gửi, lỗi không báo đã gửi, không trùng, sửa phải duyệt lại; FAQ bị chặn khi chưa TA duyệt) | **Pass** (không tự gửi TA; gửi chỉ sau xác nhận; nhắc "không hứa phản hồi trước hạn") |
+
+**Lỗi còn lại:**
+1. **Chưa có mô hình thật.** Câu trả lời đúng là vì bộ luật viết sẵn, chưa chứng minh một mô hình ngôn ngữ sẽ giữ được T1 khi bị hỏi lách khéo. Khi dùng AI thật thì cần thêm bộ lọc đầu ra chặn số liệu bài mở, giống bộ chặn FAQ đã dựng.
+2. **Định tuyến bằng từ khoá dễ nhầm** với câu gộp nhiều ý. Hậu quả: câu trả lời kém hữu ích. Hậu quả này không rò đáp án, vì prototype không có mã nào tính kết quả bài 3.
+3. **Nhận diện rò số trong FAQ chỉ khớp vài chuỗi cố định.** Nếu ai đó viết đáp số theo cách khác thì sẽ lọt, nên vẫn cần TA tích ô kiểm tra. Đây là lý do `dang_FAQ` giữ mức cần TA duyệt.
+
+## §7. Demo
+
+**Trạng thái: chưa diễn ra** tại thời điểm viết. Sau buổi demo, nhóm sẽ ghi lại ca lạ thật đã nhận, prototype đã làm gì, và nhóm có đổi ý gì sau ca đó không.
+
+**Kịch bản demo (khoảng 4 phút):**
+
+| Phần | Người nói | Nội dung |
+|---|---|---|
+| Lát cắt (30 giây) | Duy | Học viên 22:30, bài 3 hạn 23:59, TA đã hết ca: sai thì rẻ nhưng âm thầm |
+| S01 trên prototype | Bảo bấm, Duy giải thích | Nguồn §3.3 sai → H1 tô vàng, phản ví dụ tách nhãn → H2 sửa nháp → H3 xem trước, ngoài giờ → hàng chờ TA → FAQ bị chặn (H5) |
+| S02 và mức tự chủ | Bảo | Xin giải → một bước đầu → xin xác nhận bị chặn → không có nút đáp án (H3b). Trả lời câu "sai thì ai mất gì": `goi_y_bai_tap` lộ đáp án thì không thu hồi được, nên chỉ cho bước đầu |
+| Ca lạ | Cả hai | Gõ ca TA đưa vào ô chat. Câu ngoài tài liệu đi nhánh "Tài liệu không có"; câu đòi việc cấm thì bị từ chối kèm đường khác |
+
+**Ca lạ đã tập trước** (do nhóm tự đặt, không phải ca TA đưa): "Hệ số tương quan Pearson tính thế nào?" → nhánh "Tài liệu không có", đề nghị soạn câu hỏi cho TA (C12).
+
+**Ca lạ nhận được ở demo:** *chưa diễn ra.*
