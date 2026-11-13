@@ -6,7 +6,7 @@
 |---|---|
 | Công cụ | HTML/CSS/JavaScript thuần, một file `index.html` |
 | Số màn hình | 2: **Màn 1 · Học viên** và **Màn 2 · Hàng chờ TA (mô phỏng)**, chuyển bằng tab |
-| Lời gọi AI thật | **Không có.** Câu trả lời do một bộ luật định tuyến theo từ khoá chọn ra, câu chữ lấy nguyên văn từ `spec.md` §3 |
+| Lời gọi AI thật | **Không có.** Câu trả lời do luật từ khoá chọn ra, bám đặc tả `spec.md` §3; câu chữ đã được rà cho dễ hiểu |
 | Phần mock | Câu trả lời của AI, hàng chờ TA, FAQ, mã yêu cầu `YC-…`, lỗi mạng (bật trong "Bảng điều khiển demo"). Đồng hồ cố định ở **22:30 ngày 13/11/2026**, không lấy giờ máy |
 | Dữ liệu | Chỉ dùng dữ liệu dựng trong `tracks/t2-education.md`: tài liệu buổi 3 §3.1–§3.5 và trang khóa học. Không có dữ liệu thật |
 
@@ -39,6 +39,6 @@ Bảng giải thích từng số nằm ở `spec.md` §5.2.
 
 ## Tự kiểm C01–C12
 
-Mở `index.html?selftest=1`. Trang sẽ tự bấm qua các ca theo checklist C01–C12 trong bàn giao, cộng thêm 3 ca X1–X3, rồi in kết quả ở cuối trang. Kết quả lần chạy gần nhất (Chrome headless) được lưu ở `selftest-result.txt`: **15/15 PASS**.
+Mở `index.html?selftest=1`. Trang sẽ tự bấm qua checklist C01–C12, cộng thêm X1–X5, rồi in kết quả ở cuối trang. Kết quả chạy lại sau lượt chỉnh sửa (Chrome headless) được lưu ở `selftest-result.txt`: **17/17 PASS**. X4 kiểm FAQ S01 không bịa trạng thái, đúng điều kiện và vẫn cần TA duyệt; X5 kiểm lời giới hạn dễ hiểu mà không mở thêm quyền.
 
 Bộ test này bấm vào giao diện thật của prototype. Nó **không** chứng minh một chatbot tổng quát đã an toàn: bộ luật chỉ phủ các ca trong `spec.md` §2, và câu chưa có luật sẽ rơi về nhánh "tài liệu không có".

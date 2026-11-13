@@ -289,10 +289,10 @@ function answerS02(){ S.hintsBai3++; return {kind:'S02', tool:'goi_y_bai_tap · 
   html:`<p>Bài 3 đang mở, hạn nộp là 23:59 ngày 13/11/2026 theo trang khóa học. Mình có thể gợi ý bước đầu, nhưng không đưa hoặc xác nhận đáp số, cũng không viết nhận xét để bạn nộp.</p>
         <p><b>Bước đầu:</b> đếm xem dãy ở §3.5 có bao nhiêu giá trị, rồi đối chiếu quy tắc chẵn/lẻ khi tìm trung vị ở §3.2. Mình sẽ không tính hoặc chốt kết quả của bài đang mở.</p>
         <p>Nếu bạn đang vướng một khái niệm, hãy nói rõ khái niệm đó; mình có thể giải thích từ tài liệu. Nếu cần TA, bạn có thể xem và duyệt nội dung gửi. TA hiện ngoài giờ, nên mình không hứa có phản hồi trước hạn tối nay.</p>`,
-  actions:[A_SRC('A3.2'),{label:'Mình đang vướng khái niệm khác', act:()=>focusInput('Em vướng khái niệm: ')}, A_TA('S02')], noAct:'Không có nút “Xem đáp án”, “Chấm đáp số” hay “Đăng lời giải” — các việc này bị cấm.'}; }
+  actions:[A_SRC('A3.2'),{label:'Mình đang vướng khái niệm khác', act:()=>focusInput('Em vướng khái niệm: ')}, A_TA('S02')], noAct:'Với bài đang mở, mình chỉ hỗ trợ bước đầu. Bạn có thể xem lại định nghĩa hoặc soạn câu hỏi cho TA.'}; }
 function answerS03(){ return {kind:'S03', tool:'goi_y_bai_tap · chặn xác nhận', ground:G.lim, srcs:['B-BT3','A3.1','A3.2'],
   html:`<p>Mình chưa thể xác nhận đáp số bài đang mở, kể cả chỉ trả lời đúng hoặc sai. Bạn có thể đối chiếu định nghĩa ở §3.1 và §3.2. Mình có thể giải thích các định nghĩa đó, nhưng không kiểm lần lượt các phép tính để chốt lời giải thay bạn.</p>`,
-  actions:[A_SRC('A3.1'),A_SRC('A3.2'),A_TA('S02')], noAct:'Không có nút “Kiểm tra đáp số”.'}; }
+  actions:[A_SRC('A3.1'),A_SRC('A3.2'),A_TA('S02')], noAct:'Mình không xác nhận đáp số bài đang mở. Bạn có thể đối chiếu định nghĩa trong tài liệu.'}; }
 function answerRepeatHint(){ return {kind:'C08', tool:'goi_y_bai_tap · đã dùng gợi ý bước đầu', ground:G.lim, srcs:['B-BT3','A3.1','A3.2'],
   html:`<p>Mình đã gợi ý bước đầu cho Bài 3 rồi. Mình không đưa thêm từng bước tính tiếp, vì ghép các bước lại sẽ thành lời giải của bài đang mở.</p>
         <p>Mình vẫn giải thích được định nghĩa ở §3.1, §3.2 bằng ví dụ khác, hoặc bạn có thể soạn câu hỏi cho TA.</p>`,
@@ -335,11 +335,11 @@ function answerS08(){ return {kind:'S08', tool:'(không gọi tool)', ground:['g
   actions:[{label:'Trung bình (§3.1)', act:()=>userSays('Trung bình là gì ạ?')},{label:'Trung vị (§3.2)', act:()=>userSays('Trung vị là gì ạ?')}]}; }
 function answerS09(){ return {kind:'S09', tool:'dang_FAQ · cần TA duyệt — trợ lý không tự đăng', ground:G.lim, srcs:['B-BT3'],
   html:`<p>Mình không đăng lời giải bài 3 lên FAQ: bài đang mở, và FAQ chỉ được đăng sau khi TA duyệt. Nếu bạn muốn, mình có thể soạn một câu hỏi <i>về khái niệm</i> (không chứa đáp án) gửi TA để TA cân nhắc đưa vào FAQ.</p>`,
-  actions:[A_TA('S09')], noAct:'Không có nút “Đăng FAQ” ở phía học viên.'}; }
+  actions:[A_TA('S09')], noAct:'Nội dung FAQ cần TA kiểm tra và duyệt trước khi công khai. Bạn có thể soạn câu hỏi để gửi TA.'}; }
 function answerS10(){ return {kind:'S10', tool:'chuyen_TA · cần bạn duyệt', ground:['g-warn','Ngoài giờ TA'], srcs:['B-TA','B-BT3'],
   html:`<p>TA trực 08:00–22:00, hiện đã ngoài giờ. Mình có thể soạn câu hỏi để bạn duyệt gửi vào hàng chờ, nhưng <b>không hứa TA trả lời trước 23:59</b> và mình <b>không có quyền gia hạn</b> bài.</p>
         <p>Trong lúc đó, bạn vẫn có thể hỏi mình phần khái niệm có trong tài liệu (§3.1–§3.5).</p>`,
-  actions:[A_TA('S10')], noAct:'Không có nút “Gia hạn” — trợ lý không có quyền này.'}; }
+  actions:[A_TA('S10')], noAct:'Mình không có quyền gia hạn bài. Bạn vẫn có thể xem tài liệu và gửi câu hỏi vào hàng chờ TA.'}; }
 function answerNotFound(raw){ return {kind:'NF', tool:'tra_cuu_tai_lieu · tự làm (không tìm thấy)', ground:G.none, srcs:[],
   html:`<p>Mình chưa tìm thấy nội dung này trong tài liệu buổi 3 (§3.1–§3.5) hay trang khóa học, nên mình không trả lời bằng kiến thức ngoài tài liệu.</p>
         <p>Tài liệu không có, bạn nên hỏi giảng viên/TA. Mình có thể soạn sẵn câu hỏi để bạn xem trước khi gửi.</p>`,
@@ -426,7 +426,7 @@ function taDraftFAQ(id){
   const t=S.queue.find(q=>q.id===id);
   if (S.faqDrafts.find(f=>f.ticketId===id)) return;
   let text;
-  if (t.kind==='S01') text='Hỏi: Độ lệch chuẩn có luôn nhỏ hơn phương sai không?\nĐáp (AI soạn, chờ TA kiểm): Không. Độ lệch chuẩn là căn bậc hai của phương sai (§3.3); khi phương sai nhỏ hơn 1 thì độ lệch chuẩn lớn hơn phương sai (ví dụ: phương sai 0,25 → độ lệch chuẩn 0,5). Câu cuối §3.3 đang được giảng viên xem lại.';
+  if (t.kind==='S01') text='Hỏi: Độ lệch chuẩn có luôn nhỏ hơn phương sai không?\nĐáp (AI soạn, chờ TA kiểm): Không. Theo §3.3, độ lệch chuẩn là căn bậc hai của phương sai. Phép kiểm tra bổ sung của nhóm cho thấy: khi 0 < phương sai < 1 thì độ lệch chuẩn lớn hơn phương sai; khi phương sai bằng 0 hoặc 1 thì hai giá trị bằng nhau. Ví dụ nhóm dựng, không phải trích tài liệu: phương sai 0,25 → độ lệch chuẩn 0,5. Nhóm đề nghị TA/giảng viên kiểm tra câu kết luận “luôn nhỏ hơn” ở §3.3; chưa có xác nhận đính chính tài liệu.';
   else text='Hỏi: Khi dữ liệu có giá trị ngoại lai, nên dùng trung bình hay trung vị?\nĐáp (AI soạn, chờ TA kiểm): Trung vị ít bị ảnh hưởng bởi ngoại lai nên thường dùng cho dữ liệu lệch (§3.2); trung bình bị kéo mạnh bởi ngoại lai (§3.1).';
   S.faqDrafts.push({id:'FAQ-'+(S.fseq++), ticketId:id, text, checked:false, error:null, kind:t.kind}); render();
 }
@@ -657,6 +657,19 @@ async function selftest(){
   ok('X1', corr, 'correction: câu sai cũ được giữ lại có nhãn đính chính, không âm thầm xoá');
   R(); clickChip('S10'); ok('X2', !/sẽ trả lời trước|đã báo TA|đã gia hạn/i.test(chatText()) && S.queue.length===0, 'S10 không hứa trước hạn, không gia hạn, không tự gửi TA');
   R(); clickChip('S06'); ok('X3', chatText().includes('buổi 7') && S.msgs.at(-1).kind==='S06', 'S06 nói buổi 7, không giảng chi tiết');
+  // X4 — FAQ S01 không bịa trạng thái giảng viên; nêu đúng khoảng và biên bằng nhau.
+  R(); clickChip('S01'); clickBtn('Soạn báo cáo cho TA'); clickBtn('Xem trước'); clickBtn('Xác nhận gửi TA'); await wait(700);
+  taDraftFAQ(S.queue[0].id);
+  const faq4=S.faqDrafts[0];
+  const faq4ok=faq4.text.includes('0 < phương sai < 1') && faq4.text.includes('bằng 0 hoặc 1') && !/đang được giảng viên xem lại/.test(faq4.text) && faq4.text.includes('đề nghị TA/giảng viên kiểm tra');
+  faq4.checked=true; faqPublish(faq4.id); const unreviewedBlocked=S.faqPublished.length===0;
+  taReview(S.queue[0].id); faqPublish(faq4.id);
+  ok('X4', faq4ok && unreviewedBlocked && S.faqPublished.length===1, 'FAQ S01 không bịa trạng thái, đúng khoảng/biên; chỉ đăng sau TA xem và duyệt');
+  // X5 — Lời giới hạn nói việc người học có thể làm, không mô tả nút của hệ thống.
+  R(); const notes5parts=[];
+  for (const ca of ['S02','S03','S09','S10']) { clickChip(ca); notes5parts.push(...[...document.querySelectorAll('.noact')].map(n=>n.innerText)); }
+  const notes5=notes5parts.join(' ');
+  ok('X5', !/Không có nút/.test(notes5) && notes5.includes('định nghĩa') && ![...$('view-learner').querySelectorAll('button:not([data-chip])')].some(b=>/^(Xem đáp án|Chấm đáp số|Đăng FAQ|Gia hạn)$/.test(b.textContent.trim())) && S.queue.length===0, 'giới hạn dễ hiểu, có đường tiếp; không thêm quyền cấm hoặc tự gửi TA');
   R();
   const pass=out.filter(l=>l.startsWith('PASS')).length;
   $('selftest').style.display='block'; $('selftest').textContent = `SELFTEST ${pass}/${out.length}\n`+out.join('\n');

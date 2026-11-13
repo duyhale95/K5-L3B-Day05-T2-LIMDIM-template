@@ -2,7 +2,7 @@
 
 > Các câu người dùng, phản hồi AI và trạng thái giao diện trong bài đều là tình huống dựng để học. Prototype nằm ở [`prototype/`](prototype/): mở `prototype/index.html` bằng trình duyệt. §7 ghi kết quả demo sau buổi demo.
 
-**Lớp:** L3B · **Bàn/zone:** [chưa điền] · **Track:** T2
+**Lớp:** L3B · **Track:** T2
 
 | Họ và tên | Mã học viên | Việc đã làm |
 |---|---|---|
@@ -16,7 +16,7 @@
 | Hà Lê Duy | [26ai.duyhl2@vinuni.edu.vn](mailto:26ai.duyhl2@vinuni.edu.vn) | [duyhale95](https://github.com/duyhale95) |
 | Nguyễn Thiên Bảo | [26ai.baont5@vinuni.edu.vn](mailto:26ai.baont5@vinuni.edu.vn) | [Limdim1604](https://github.com/Limdim1604) |
 
-Nhóm có 2 thành viên. Buổi lab L3B ngày 13/11/2026, ban tổ chức cho phép nhóm 2–4 người. Kết quả demo chưa diễn ra sẽ không được ghi như sự kiện thật.
+Nhóm có 2 thành viên, theo quy định nhóm 2–4 người được ban tổ chức thông báo trong buổi lab L3B ngày 13/11/2026.
 
 ## §1. Lát cắt & phạm vi
 
@@ -86,7 +86,7 @@ Các lớp: **① nguồn sự thật · ② mơ hồ/thiếu thông tin · ③ 
 
 **Loại lỗi:** lỗi hệ thống ở dữ liệu nguồn, dù bước tra cứu chạy đúng. Khi học viên đưa ra nghi vấn, đó là phản hồi cần tiếp nhận; không gọi là lỗi của học viên.
 
-**Lời AI dự kiến, nguyên văn:**
+**Lời AI trong đặc tả (được rút gọn câu chữ trên prototype, giữ nguyên nội dung và giới hạn):**
 
 > Bạn đã chỉ ra một câu cần kiểm tra ở §3.3: “Vì là căn bậc hai, độ lệch chuẩn luôn nhỏ hơn phương sai.”
 >
@@ -98,7 +98,7 @@ Phản ví dụ là phép kiểm tra toán học minh bạch của thiết kế,
 
 **Người học thấy và làm tiếp:**
 
-| Vị trí dự kiến | Nội dung hiển thị | Thao tác và kết quả |
+| Vị trí trên giao diện | Nội dung hiển thị | Thao tác và kết quả |
 |---|---|---|
 | H1 — căn cứ | Nhãn “Nguồn có điểm cần kiểm tra”; thẻ §3.3 mở được nguyên văn; phản ví dụ tách nhãn riêng | Bấm “Xem đoạn nguồn” để kiểm tra đúng câu. Không dùng tỷ lệ tin cậy tự bịa. |
 | H2 — quyền sửa | Bản nháp báo cáo có câu hỏi, trích đoạn và lý do nghi vấn | “Sửa báo cáo” đổi nội dung; “Bỏ bản nháp” hủy trước gửi. |
@@ -121,7 +121,7 @@ Phản ví dụ là phép kiểm tra toán học minh bạch của thiết kế,
 
 **Loại lỗi:** yêu cầu vượt phạm vi hỗ trợ; không kết luận học viên kém hoặc có ý gian lận. Nếu AI đưa đáp án thì đó là lỗi hệ thống thực thi giới hạn. Bối cảnh sát hạn giải thích nhu cầu cần giúp nhanh, không mở thêm quyền giải hộ.
 
-**Lời AI dự kiến, nguyên văn:**
+**Lời AI trong đặc tả (được rút gọn câu chữ trên prototype, giữ nguyên nội dung và giới hạn):**
 
 > Bài 3 đang mở, hạn nộp là 23:59 ngày 13/11/2026 theo trang khóa học. Mình có thể gợi ý bước đầu, nhưng không đưa hoặc xác nhận đáp số, cũng không viết nhận xét để bạn nộp.
 >
@@ -135,7 +135,7 @@ Phản ví dụ là phép kiểm tra toán học minh bạch của thiết kế,
 
 **Người học thấy và làm tiếp:**
 
-| Vị trí dự kiến | Nội dung hiển thị | Thao tác và kết quả |
+| Vị trí trên giao diện | Nội dung hiển thị | Thao tác và kết quả |
 |---|---|---|
 | H1 — căn cứ | “Bài 3 đang mở”, hạn lấy từ B; thẻ §3.1/§3.2/§3.5 | Mở đúng đoạn; không gắn nguồn “slide 12”. |
 | H2 — sửa nhu cầu | Lựa chọn “Xem định nghĩa”, “Mình đang vướng khái niệm khác” | Xem khái niệm hoặc làm rõ câu hỏi; không mở chuỗi tính lần lượt bài 3. |
@@ -156,7 +156,7 @@ Phản ví dụ là phép kiểm tra toán học minh bạch của thiết kế,
 
 ### 3.3. Ba nguyên tắc gắn với vị trí trên prototype
 
-| Nguyên tắc | Quyết định cụ thể | Vị trí dự kiến để B dựng và chụp ảnh |
+| Nguyên tắc | Quyết định cụ thể | Vị trí trên prototype và ảnh §5.2 |
 |---|---|---|
 | PAIR — Explainability + Trust | Cho xem đúng căn cứ và giới hạn; phân biệt trích nguồn với phản ví dụ nhóm dựng. | H1: thẻ nguồn §3.3 hoặc trạng thái bài từ B, nhãn “cần kiểm tra/đang mở”. |
 | HAX G9 — Sửa dễ dàng | Người học sửa câu hỏi/báo cáo, bỏ bản nháp trước gửi; AI không tự công bố bản sửa. | H2: nút sửa, trường nội dung và nút bỏ; sau sửa vẫn phải duyệt gửi. |
@@ -228,7 +228,7 @@ Ba cách cân nhắc:
 
 Đổi lại, cách 3 cần kiểm soát nhiều lượt: không để mỗi lượt “chỉ thêm một bước” cuối cùng thành cả bài. Prototype mô phỏng dựng đường chặn yêu cầu lặp: mỗi bài mở chỉ có một gợi ý bước đầu, các lượt xin thêm đều bị chặn (C08 ở §5.4). Bài không tuyên bố đã giải quyết mọi cách lách bằng ngôn ngữ tự nhiên.
 
-**Lựa chọn của từng thành viên:** Hà Lê Duy (A) và Nguyễn Thiên Bảo (B) đều chọn phương án 3: AI được tự gợi ý trong giới hạn, không đưa hoặc xác nhận đáp số bài đang mở. Bảo đã xác nhận lựa chọn này. Hai thành viên không có bất đồng về mức tự chủ của tool; khác biệt giữa các phương án vẫn được phân tích để làm rõ cái giá của từng cách, không dựng ra một cuộc tranh luận không có thật.
+**Lựa chọn của hai thành viên:** Duy và Bảo cùng chọn phương án 3: AI tự gợi ý trong giới hạn, không đưa hoặc xác nhận đáp số bài đang mở. Nhóm thống nhất giữ hỗ trợ ngay cho phần khái niệm và bước đầu, thay vì giải hộ hoặc bắt mọi gợi ý chờ TA duyệt.
 
 **Lý do chọn:** Với người học hỏi lúc 22:30, yêu cầu TA duyệt mọi gợi ý sẽ khiến hỗ trợ cơ bản bị gián đoạn vì TA đã hết ca lúc 22:00. Ngược lại, cho AI tự giải không giới hạn sẽ làm lộ lời giải ở S02/S03. Phương án 3 giữ được trợ giúp ngay cho câu khái niệm và bước đầu, đồng thời giới hạn những nội dung không thể thu hồi sau khi học viên đã đọc.
 
@@ -242,7 +242,7 @@ Bảng này là kiểm tra logic trên giấy. Kết quả chạy thật trên p
 
 | Ca | Chuỗi hành động dự kiến | Sai đã bị chặn thế nào? | Còn tự làm khi cần hỏi/duyệt không? | Có bắt chờ vô ích không? |
 |---|---|---|---|---|
-| S01 — nguồn sai | Tự tra §3.3 → hiện nghi vấn và phản ví dụ → soạn báo cáo → học viên duyệt gửi → TA nhận hàng chờ. FAQ giữ nháp tới khi kiểm tra/duyệt. | Không lặp câu sai thành bảo chứng; không tự công bố đính chính. Cần B thử cả đường gửi lỗi và FAQ. | Không tự sửa tài liệu/gửi báo cáo/đăng FAQ. Người học không bấm thì chưa gửi. | Học viên biết ngay câu nào cần xem lại; chỉ phần xác minh chính thức chờ TA. |
+| S01 — nguồn sai | Tự tra §3.3 → hiện nghi vấn và phản ví dụ → soạn báo cáo → học viên duyệt gửi → TA nhận hàng chờ. FAQ giữ nháp tới khi kiểm tra/duyệt. | Không lặp câu sai thành bảo chứng; không tự công bố đính chính. Đường gửi lỗi và duyệt FAQ được kiểm tra ở C04, C10 và X4 (§5.4). | Không tự sửa tài liệu/gửi báo cáo/đăng FAQ. Người học không bấm thì chưa gửi. | Học viên biết ngay câu nào cần xem lại; chỉ phần xác minh chính thức chờ TA. |
 | S02 — bài mở | Đọc B và §3.5 → nêu giới hạn → gợi ý bước đầu → chặn xin đáp số/xác nhận lặp lại → chuyển TA chỉ khi học viên muốn và duyệt. | Chặn lời giải trước hiển thị và trên FAQ; không xem xác thực người học là quyền giải hộ. | Không gửi TA ngầm, không dùng học viên duyệt để mở khóa đáp án. | Không cần TA duyệt định nghĩa/gợi ý bước đầu có nguồn. |
 | N01 — hỏi khái niệm | Tự tra §3.1–§3.2 → giải thích trung bình/trung vị, kèm nguồn. | Không kéo câu hỏi thành lời giải số liệu §3.5; không thêm nguồn ngoài fixture. | Không cần hỏi lại vì yêu cầu đã rõ; không có hành động công khai cần duyệt. | Trả lời ngay, không chuyển TA bắt buộc. |
 
@@ -252,7 +252,7 @@ Bảng này là kiểm tra logic trên giấy. Kết quả chạy thật trên p
 
 Giữ bốn tool gốc. Bổ sung các bước nội bộ **soạn bản nháp → xem trước → duyệt → thực thi** cho chuyển TA và FAQ; soạn nháp không được tính là tool đã gửi hoặc đã đăng. Đây là thay đổi luồng được khai báo, không giả một tool gửi có khả năng thu hồi.
 
-Trạng thái đề xuất: yêu cầu `draft → queued → reviewed`; gửi lỗi giữ `draft` kèm lỗi. FAQ `draft → published` chỉ sau TA duyệt và nội dung vượt qua giới hạn bài mở/nguồn. B có thể bổ sung trạng thái sửa lỗi nếu ghi rõ và không đổi quyền tự chủ.
+Yêu cầu đi qua các trạng thái `draft → queued → reviewed`. Nếu gửi lỗi, bản nháp được giữ để thử lại; nếu chưa rõ kết quả, hệ thống cho kiểm tra yêu cầu đã vào hàng chờ hay chưa. FAQ chuyển từ `draft → published` sau TA duyệt và vượt qua bước kiểm tra nội dung. Các trạng thái này không mở thêm quyền cho AI.
 
 Trước mỗi gợi ý, kiểm trạng thái bài và phần trợ giúp đã cung cấp. Nếu thiếu trạng thái bài, hỏi bài nào hoặc chỉ giải thích khái niệm; không mặc định bài đã đóng. Không tự suy ra quy ước mẫu/tổng thể hay hàm Excel từ câu hỏi S07.
 
@@ -282,7 +282,7 @@ Các bước xử lý trạng thái ở đây là luật thiết kế bổ sung 
 | File | [`prototype/index.html`](prototype/index.html), mở bằng trình duyệt, không cần mạng. Hướng dẫn bấm: [`prototype/README.md`](prototype/README.md) |
 | Công cụ | HTML/CSS/JS thuần, một file, không backend |
 | Hai màn hình | **Màn 1 · Học viên** (chat, thẻ nguồn, bản nháp gửi TA) · **Màn 2 · Hàng chờ TA (mô phỏng)** (nhận yêu cầu, dự thảo FAQ, duyệt đăng) |
-| Phần mock | Câu trả lời AI do bộ luật từ khoá chọn ra, câu chữ lấy nguyên văn từ §3. Hàng chờ TA, mã `YC-…`, FAQ đều chỉ tồn tại trong trang. Lỗi mạng và mất phản hồi được bật bằng tay trong "Bảng điều khiển demo". Đồng hồ cố định 22:30 13/11/2026 |
+| Phần mock | Câu trả lời AI do bộ luật từ khoá chọn ra, câu chữ bám đặc tả §3, được rà cho dễ hiểu. Hàng chờ TA, mã `YC-…`, FAQ đều chỉ tồn tại trong trang. Lỗi mạng và mất phản hồi được bật bằng tay trong "Bảng điều khiển demo". Đồng hồ cố định 22:30 13/11/2026 |
 | Lời gọi AI thật | **Không có.** Nhóm không nhận bonus +3 |
 | Dữ liệu | Chỉ dữ liệu dựng của track: tài liệu buổi 3 §3.1–§3.5, trang khóa học |
 
@@ -296,18 +296,16 @@ Các bước xử lý trạng thái ở đây là luật thiết kế bổ sung 
 
 ![S02](prototype/anh-s02.png)
 
-**Ảnh 3 — Màn TA: hai yêu cầu đã duyệt gửi, dự thảo FAQ bị chặn** ([`anh-ta.png`](prototype/anh-ta.png))
-
-![TA](prototype/anh-ta.png)
+**Ảnh bổ sung — Màn TA:** [hai yêu cầu đã duyệt gửi, dự thảo FAQ bị chặn](prototype/anh-ta.png). Hai ảnh chính ở trên dùng để đối chiếu H1–H3; ảnh bổ sung minh họa người nhận và quyền duyệt FAQ.
 
 | Số | Thể hiện gì | Nguyên tắc | Mức tự chủ |
 |---|---|---|---|
-| **H0** | Nhãn "Bạn đang trò chuyện với trợ lý AI" và khung "Trợ lý AI này làm được gì" ở đầu chat (lời hứa §4.6) | G1 · Luật AI 134/2025 Điều 11 khoản 1 | — |
+| **H0** | Nhãn "Bạn đang trò chuyện với trợ lý AI" và khung "Trợ lý AI này làm được gì" ở đầu chat (lời hứa §4.6) | G1 · Làm rõ hệ thống làm được gì | — |
 | **H1** | Thẻ nguồn §3.x dưới mỗi câu trả lời. Bấm vào thì khung "Căn cứ trợ lý dựa vào" hiện nguyên văn đoạn tài liệu, câu nghi sai được tô vàng. Phản ví dụ 0,25 → 0,5 nằm trong khung riêng có nhãn "do nhóm dựng, không phải trích tài liệu" | PAIR Explainability + Trust | `tra_cuu_tai_lieu` · tự làm |
 | **H4** | Nhãn căn cứ trên đầu mỗi câu trả lời: *Có nguồn* (xanh) · *Nguồn có điểm cần kiểm tra* (vàng) · *Giới hạn: bài đang mở* (tím) · *Không có trong tài liệu* (xám) · *Cần hỏi lại*. Bên cạnh là tên tool và mức đang dùng, ví dụ `goi_y_bai_tap · tự làm, chỉ bước đầu` | G2 · Làm rõ làm tốt đến đâu | hiện mức của tool vừa dùng |
 | **H2** | Bản nháp gửi TA: ô chữ sửa được, nút **Xem trước** và **Bỏ bản nháp**. Dưới mỗi câu trả lời có thêm "Không phải ý mình — hỏi lại" và "Câu này sai? Báo TA" | G9 · Sửa dễ dàng (G8 · bỏ dễ dàng) | `chuyen_TA` · cần học viên duyệt |
 | **H3** | Bước xem trước: người nhận, nguồn đính kèm, dòng "TA ngoài giờ, không cam kết trước 23:59", dòng "Bài 3 đang mở: TA không giải hộ", nút **Xác nhận gửi TA** | G10 · Thu hẹp phạm vi khi nghi ngờ | `chuyen_TA` · cần học viên duyệt |
-| **H3b** | Ghi chú "Không có nút Kiểm tra đáp số / Xem đáp án / Gia hạn / Đăng FAQ": việc cấm thì không có nút, và yêu cầu gõ bằng tin nhắn cũng bị chặn | G10 · PAIR Errors + Graceful Failure | việc **cấm** |
+| **H3b** | Lời giới hạn nói rõ trợ lý không xác nhận đáp số, chỉ gợi ý bước đầu và cho xem định nghĩa hoặc soạn câu hỏi cho TA. Không có nút thực hiện việc cấm; yêu cầu bằng tin nhắn cũng bị chặn trong các ca đã kiểm. | G10 · PAIR Errors + Graceful Failure | việc **cấm** |
 | **H5** | Dự thảo FAQ ở màn TA: AI chỉ soạn. Nút **Duyệt đăng FAQ** bị chặn khi TA chưa tích "đã kiểm tra", khi yêu cầu gốc chưa được xem, khi thiếu mục §, hoặc khi nội dung có đáp số bài đang mở | PAIR Errors + Graceful Failure | `dang_FAQ` · cần TA duyệt |
 
 Ba nguyên tắc chính ở §3.3 (PAIR, G9, G10) ứng với H1, H2, H3. G1, G2 (H0, H4) là phần bổ sung.
@@ -324,7 +322,7 @@ Ba nguyên tắc chính ở §3.3 (PAIR, G9, G10) ứng với H1, H2, H3. G1, G2
 
 ### 5.4. Kết quả chạy thật C01–C12
 
-Mở `prototype/index.html?selftest=1`: trang tự bấm qua giao diện theo checklist trong bàn giao. Kết quả lần chạy bằng Chrome headless ngày 13/11/2026 được lưu ở [`prototype/selftest-result.txt`](prototype/selftest-result.txt): **15/15 PASS**.
+Mở `prototype/index.html?selftest=1`: trang tự bấm qua giao diện theo checklist trong bàn giao. Sau lượt chỉnh câu chữ, kết quả chạy lại bằng Chrome headless ngày 13/11/2026 được lưu ở [`prototype/selftest-result.txt`](prototype/selftest-result.txt): **17/17 PASS**. Bộ kiểm cũ gồm C01–C12 và X1–X3; lượt này thêm X4 kiểm FAQ S01 và X5 kiểm lời giới hạn cùng quyền hành động.
 
 | Mã | Kết quả | Mã | Kết quả |
 |---|---|---|---|
@@ -335,6 +333,7 @@ Mở `prototype/index.html?selftest=1`: trang tự bấm qua giao diện theo ch
 | C05 bấm gửi lặp, đổi tab, mất phản hồi | PASS | C12 "slide 12" và ca lạ ngoài tài liệu | PASS |
 | C06 sửa sau xem trước phải duyệt lại | PASS | X1 correction giữ câu sai có nhãn | PASS |
 | C07 không đáp số, không nút chấm | PASS | X2 S10 không hứa, không gia hạn · X3 S06 buổi 7 | PASS |
+| X4 FAQ S01: không bịa trạng thái, đúng khoảng/biên, cần TA duyệt | PASS | X5 lời giới hạn có đường tiếp, không thêm quyền hoặc tự gửi TA | PASS |
 
 Phạm vi của kết quả này: test chứng minh **prototype** làm đúng các ca đã viết luật. Nó không chứng minh một mô hình ngôn ngữ thật sẽ tuân thủ các luật đó (xem §6, lỗi còn lại).
 
@@ -342,7 +341,7 @@ Phạm vi của kết quả này: test chứng minh **prototype** làm đúng c�
 
 **Hiện độ chắc bằng loại căn cứ, không bằng phần trăm.**
 - *Đã cân nhắc:* (a) thanh phần trăm "độ tin cậy 85%"; (b) chỉ ghi "§3.3" ở cuối câu như chú thích; (c) nhãn màu theo loại căn cứ, kèm thẻ nguồn mở được nguyên văn.
-- *Chọn (c).* Ca S01 cho thấy "có nguồn" chưa có nghĩa là "đúng": AI trích đúng §3.3 nhưng câu nguồn sai. Một con số phần trăm sẽ cao đúng ở chỗ nguy hiểm nhất. Nhãn "Nguồn có điểm cần kiểm tra" cùng câu tô vàng cho học viên tự kiểm (PAIR: tin đúng mức).
+- *Chọn (c).* Ca S01 cho thấy "có nguồn" chưa đủ bảo đảm nội dung đúng: AI có thể trích đúng §3.3 nhưng lặp lại câu sai. Nhóm không có dữ liệu hiệu chuẩn để đưa ra phần trăm đáng tin. Nhãn "Nguồn có điểm cần kiểm tra" cùng câu tô vàng giúp học viên biết chỗ cần xem lại.
 - *Loại (a):* không có căn cứ để tính con số. *Loại (b):* học viên phải tự đi tìm tài liệu lúc 22:30, và chú thích không phân biệt được nguồn khóa học với ví dụ nhóm dựng.
 
 **Chuyển TA bằng thẻ bản nháp nằm cạnh chat, không bằng hộp thoại bật lên hay "tự gửi rồi cho hoàn tác".**
@@ -351,7 +350,7 @@ Phạm vi của kết quả này: test chứng minh **prototype** làm đúng c�
 - *Loại (a):* đề không cấp tool thu hồi yêu cầu, nên nút hoàn tác sẽ là lời hứa giả (§4.7.5). *Loại (b):* hộp Có/Không không cho sửa, dễ bị bấm theo thói quen.
 
 **Việc cấm thì không có nút, không dùng nút mờ.**
-- Nút "Xem đáp án" để mờ vẫn gợi ý rằng việc đó làm được nếu có quyền, và mời học viên tìm cách lách. Thay vào đó, prototype ghi rõ "Không có nút … — việc này bị cấm" (H3b) và chặn cả yêu cầu gõ bằng chữ.
+- Nhóm bỏ nút "Xem đáp án" thay vì để mờ, để tránh gợi ý rằng học viên có thể mở khóa lời giải. Lời giới hạn (H3b) giải thích ngắn việc trợ lý hỗ trợ được, rồi chỉ tới định nghĩa hoặc bản nháp gửi TA. Bộ luật vẫn chặn các yêu cầu giải hộ bằng chữ trong những ca đã kiểm.
 
 **Việc "tự làm" không có nút hoàn tác.**
 - Rubric gợi ý "tự làm có hoàn tác". Nhưng với `tra_cuu_tai_lieu` và `goi_y_bai_tap`, thứ đã hiện ra là kiến thức học viên đã đọc, không thu hồi được (§4.7.6).
@@ -376,7 +375,7 @@ Ba tiêu chí Pass/Fail, chấm được mà không cần tranh luận:
 | # | Tiêu chí | Fail khi |
 |---|---|---|
 | T1 | **Không lộ bài đang mở.** Không có đáp số, xác nhận đúng/sai hay nhận xét hộ cho bài 3, ở bất kỳ chỗ nào: tin nhắn, thẻ nguồn, gợi ý lặp, FAQ | Trên trang xuất hiện kết quả bài 3, hoặc một câu "đúng/sai" cho đáp số học viên đưa |
-| T2 | **Nguồn đúng và tách bạch.** Mọi câu về nội dung kèm mục § mở được nguyên văn; câu nghi sai được gắn cờ; ví dụ nhóm dựng có nhãn riêng; không nhắc nguồn không có | Có câu nội dung không kèm §, hoặc lặp câu sai §3.3 như kết luận chắc chắn mà không đính chính, hoặc có nội dung "slide 12" |
+| T2 | **Nguồn đúng và tách bạch.** Khẳng định về nội dung khóa học có nguồn A (§3.x) hoặc trường tương ứng của trang khóa học B, mở xem được; câu nghi sai được gắn cờ; phép kiểm tra và ví dụ nhóm dựng có nhãn riêng. | Khẳng định nội dung khóa học không có căn cứ A/B, bịa nội dung nguồn không tồn tại, hoặc lặp câu sai §3.3 như kết luận đúng mà không đính chính. Nói rõ “không có slide 12” không phải lỗi. |
 | T3 | **Trung thực về trạng thái.** Chỉ báo "đã vào hàng chờ" sau khi học viên duyệt và gửi thành công; không hứa giờ TA trả lời; FAQ không đăng khi chưa có TA duyệt | Có thông báo "đã gửi" khi chưa gửi hoặc gửi lỗi; có câu "TA sẽ trả lời trước hạn" hoặc "đã gia hạn"; có FAQ được đăng mà không qua TA |
 
 **Chấm thử trên hai ca đắt nhất (chạy trên prototype):**
@@ -389,12 +388,12 @@ Ba tiêu chí Pass/Fail, chấm được mà không cần tranh luận:
 
 **Lỗi còn lại:**
 1. **Chưa có mô hình thật.** Câu trả lời đúng là vì bộ luật viết sẵn, chưa chứng minh một mô hình ngôn ngữ sẽ giữ được T1 khi bị hỏi lách khéo. Khi dùng AI thật thì cần thêm bộ lọc đầu ra chặn số liệu bài mở, giống bộ chặn FAQ đã dựng.
-2. **Định tuyến bằng từ khoá dễ nhầm** với câu gộp nhiều ý. Hậu quả: câu trả lời kém hữu ích. Hậu quả này không rò đáp án, vì prototype không có mã nào tính kết quả bài 3.
+2. **Định tuyến bằng từ khoá dễ nhầm** với câu gộp nhiều ý, nên có thể trả lời không đúng nhu cầu hoặc bỏ sót phần cần hỏi lại. Các ca đã kiểm không lộ đáp số, nhưng điều đó chưa chứng minh mọi đầu vào đều an toàn. Việc không có mã tính bài 3 cũng không ngăn người dùng nhập lời giải vào ô soạn FAQ; rủi ro này còn phụ thuộc bước TA kiểm tra và bộ chặn ở mục 3.
 3. **Nhận diện rò số trong FAQ chỉ khớp vài chuỗi cố định.** Nếu ai đó viết đáp số theo cách khác thì sẽ lọt, nên vẫn cần TA tích ô kiểm tra. Đây là lý do `dang_FAQ` giữ mức cần TA duyệt.
 
 ## §7. Demo
 
-**Trạng thái: chưa diễn ra** tại thời điểm viết. Sau buổi demo, nhóm sẽ ghi lại ca lạ thật đã nhận, prototype đã làm gì, và nhóm có đổi ý gì sau ca đó không.
+**Kế hoạch demo:** Nhóm trình bày hai ca S01/S02, sau đó xử lý ca lạ do người xem đưa ra.
 
 **Kịch bản demo (khoảng 4 phút):**
 
@@ -407,4 +406,4 @@ Ba tiêu chí Pass/Fail, chấm được mà không cần tranh luận:
 
 **Ca lạ đã tập trước** (do nhóm tự đặt, không phải ca TA đưa): "Hệ số tương quan Pearson tính thế nào?" → nhánh "Tài liệu không có", đề nghị soạn câu hỏi cho TA (C12).
 
-**Ca lạ nhận được ở demo:** *chưa diễn ra.*
+**Ghi nhận sau demo:** [Bổ sung ca lạ thực tế, phản ứng của prototype và thay đổi thiết kế nếu có sau buổi demo.]

@@ -1,4 +1,46 @@
-# Phiếu kiểm tra bản hoàn thiện §1–§4
+# Phiếu kiểm tra bài T2 sau khi nhận prototype
+
+## Trạng thái hiện tại — kết quả để Duy kiểm tra
+
+**Cập nhật theo góp ý Argon:** đã bỏ dẫn chiếu AI Log khỏi hai file bài nộp, giữ nhật ký riêng; rút gọn §4.3 thành lựa chọn chung Duy/Bảo; thay lời nhắc Bảo bằng trạng thái đã dựng và tham chiếu C04/C10/X4. §7 chuyển sang kế hoạch demo và ô ghi nhận sau demo. Không điền giả bàn/zone, không thêm lịch sử “chọn độc lập ngay từ đầu”. Các đoạn bên dưới ghi việc rà trước lượt biên tập này; dẫn chiếu AI Log từng thêm vào spec/README đã được gỡ theo yêu cầu mới.
+
+- Đã nhận prototype và §5–§7 từ commit `e6a9dcb` của Bảo.
+- Đã chỉnh lời giới hạn trên UI để nói rõ việc học viên có thể làm tiếp, thay cho câu mô tả “không có nút”. Không đổi mức tự chủ đã chốt.
+- Sửa FAQ S01: không nhận giảng viên đang xem lại khi chưa có căn cứ; ghi đúng khoảng `0 < phương sai < 1` và trường hợp bằng nhau tại 0/1; tách phép kiểm của nhóm khỏi trích nguồn.
+- Sửa tiêu chí nguồn T2 để dùng được cả tài liệu A lẫn trang khóa học B; câu “không có slide 12” không bị coi là bịa nguồn.
+- Bỏ khẳng định không thể rò đáp án chỉ vì prototype không tính bài 3; giữ giới hạn bộ chặn FAQ và trách nhiệm TA kiểm tra.
+- Bỏ phỏng đoán về phần trăm tin cậy; phần minh bạch AI ở H0 chỉ gắn G1, không cần khẳng định pháp lý ngoài phạm vi bài.
+- Đã chạy lại Chrome headless: **17/17 PASS**. X4/X5 đã thất bại trước sửa, rồi đạt sau sửa. X5 được sửa cách quan sát cho đúng UI: đọc lời giới hạn sau từng câu hỏi vì trang chỉ hiện phần này ở tin mới nhất.
+- Đã chụp lại và xem ba ảnh; hai ảnh học viên là ảnh chính, ảnh TA là bổ sung. Nhãn H3b về “việc cấm” chỉ thuộc chế độ chú thích demo.
+- [AI_USAGE_LOG.md](AI_USAGE_LOG.md) đã được liên kết từ spec và README prototype. Không biết công cụ AI riêng Bảo dùng; không ghi thay.
+- Chưa commit/push lượt sửa này. Chưa xác nhận demo/nộp qua kênh lớp; bàn/zone vẫn chưa điền. Quy định nhóm 2–4 người là thông tin trong bản Bảo bổ sung, nhóm cần giữ nguồn thông báo thật.
+
+## Phương án cấu trúc repo cuối — đề xuất, chưa di chuyển hoặc xóa
+
+```text
+spec.md
+AI_USAGE_LOG.md
+README.md                 ← cách mở prototype, thành viên, link spec, trạng thái demo/nộp thật
+prototype/
+  index.html
+  README.md
+  selftest-result.txt
+  anh-s01.png
+  anh-s02.png
+  anh-ta.png
+```
+
+Đề xuất đưa bài từ `submission-draft/` ra root; chuyển tài liệu đề, kế hoạch và bàn giao nội bộ sang bản lưu cục bộ ngoài repo trước khi bỏ chúng khỏi cây bài nộp. Không sửa lịch sử Git hoặc xóa bản tham chiếu duy nhất. Cần Duy đồng ý riêng với thao tác dọn repo; hiện chưa thực hiện. Cấu trúc Git hiện tại kế thừa repo đề nên chưa đáp ứng yêu cầu “repo mới, không clone rồi push”; dọn file chỉ sửa cây hiện tại, không biến lịch sử thành repo mới. Nếu cần tuân thủ đầy đủ, nhóm phải chọn repo mới trống chứa đúng bộ bài rồi nộp link mới.
+
+## Phạm vi kiểm chứng
+
+Đã kiểm ca viết sẵn và ảnh của prototype. Chưa đánh giá một mô hình thật, mọi đầu vào tự do hoặc việc nộp bài ở hệ thống ngoài GitHub. Chưa thể tuyên bố toàn bộ bài đạt tuyệt đối hoặc đã được giảng viên chấp nhận.
+
+---
+
+## Bản rà §1–§4 trước khi có prototype — giữ làm lịch sử
+
+Các trạng thái “chưa có màn hình/chưa chạy” trong phần bên dưới là ghi nhận ở mốc bàn giao ban đầu, không phải trạng thái hiện tại.
 
 **Trạng thái:** đã hoàn thiện nội dung theo kế hoạch được duyệt; chờ người dùng kiểm tra kết quả. Chưa stage, commit, push hoặc tạo repo nộp.
 

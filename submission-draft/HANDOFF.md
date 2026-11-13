@@ -1,5 +1,7 @@
 # Bàn giao LAB5 Track 2 — Hà Lê Duy → Nguyễn Thiên Bảo
 
+> **Tài liệu bàn giao ban đầu — giữ để tham chiếu lịch sử.** Các mục “cần dựng/chưa có prototype” bên dưới mô tả thời điểm Duy bàn giao. Hiện Bảo đã bổ sung prototype, ảnh và §5–§7 ở commit `e6a9dcb`; xem trạng thái hiện tại ở `REVIEW.md`. Lượt rà tiếp theo đã chỉnh câu chữ, thêm kiểm tra X4/X5 và chạy lại 17/17 PASS; đây chưa phải xác nhận demo hoặc nộp bài.
+
 **Người bàn giao:** Hà Lê Duy · 2A202603851 · GitHub: duyhale95
 
 **Người nhận:** Nguyễn Thiên Bảo · 2A202603861 · GitHub: Limdim1604
